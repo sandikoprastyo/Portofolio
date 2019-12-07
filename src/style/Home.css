@@ -11,12 +11,12 @@ body {
 }
 
 .title {
-    padding-top: 250px;
+    padding-top: 100px;
     text-align: center;
 }
 
 .intro {
-    margin: 50px;
+    margin: 10px;
     font-size: large;
     text-align: center;
 }
@@ -30,7 +30,7 @@ body {
 nav ul li {
     list-style: none;
     float: left;
-    padding: 20px;
+    padding: 10px;
 }
 
 nav ul li a {
@@ -40,7 +40,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: aqua;
+    color: rgb(0, 255, 255);
+}
+
+@media only screen and (max-witdh: 360) {
+    nav ul li {
+        font-size: 26px;
+        color: black;
+    }
 }
 
 

@@ -1,21 +1,39 @@
 import React, { Component } from 'react';
 import '../style/Home.css';
+/* import Gallery from "react-photo-gallery"; */
+import Carousel, { Modal, ModalGateway } from "react-images";
+import { photos } from "./photo";
+
 
 class Work extends Component
 {
+    state = { modalIsOpen: false };
+    toggleModal = () =>
+    {
+        this.setState(state => ({ modalIsOpen: !state.modalIsOpen }));
+    };
     render()
     {
+        const { modalIsOpen } = this.state;
+
+
         return (
             <div className="App">
                 <div className="title">
-                    <h2>Welcome to Work</h2>
+                    <h1>Work</h1>
                 </div>
-                <p className="intro">
-                    To get started, edit <code>src/App.js</code> and save to reload.
-                </p>
+                <ModalGateway>
+                    {modalIsOpen ? (
+                        <Modal onClose={this.toggleModal}>
+                            <Carousel views={photos} />
+                        </Modal>
+                    ) : null}
+                </ModalGateway>
             </div>
         );
     }
 }
 
 export default Work;
+
+

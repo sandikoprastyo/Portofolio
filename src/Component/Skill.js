@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 import '../style/Home.css';
+import 'react-circular-progressbar/dist/styles.css';
+import RoundHtml from './CompSkill/RoundHtml';
+import RoundJs from './CompSkill/RoundJs';
+import RoundCss from './CompSkill/RoundCss';
+import RoundBootsrap from './CompSkill/RoundBootsrap';
+import RoundSass from './CompSkill/RoundSass';
+import RoundReactJs from './CompSkill/RoundReactJs';
+
 
 class Skill extends Component
 {
@@ -8,14 +16,28 @@ class Skill extends Component
         return (
             <div className="App">
                 <div className="title">
-                    <h2>Welcome to Skill</h2>
+                    <h1>Skill</h1>
                 </div>
-                <p className="intro">
-                    To get started, edit <code>src/App.js</code> and save to reload.
-                </p>
+                <div className="intro" style={{display: "flex"}}>
+
+                    <RoundHtml />
+                    <RoundCss />
+                    <RoundJs />
+                    <RoundBootsrap />
+                    <RoundReactJs />
+                    <RoundSass />
+                </div>
+
             </div>
         );
     }
 }
+
+
+
+
+
+
+
 
 export default Skill;

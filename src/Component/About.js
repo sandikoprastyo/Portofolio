@@ -8,10 +8,11 @@ class About extends Component
         return (
             <div className="App">
                 <div className="title">
-                    <h1>About</h1>
+                    <h1>About Me</h1>
                 </div>
                 <p className="intro">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est consequuntur magnam facilis, cum laboriosam dignissimos sit itaque, magni vel, blanditiis eaque cumque quasi voluptas harum numquam maxime provident? Esse.
+                I am a freelance front developer<br/>
+                I am very excited about this field for the past year I have tried to make a project whether it's for clients or for personal use<br/> the technology I've used bootstrap, materializecss, reactjs, webpack, babel, git, sass, npm, axios etc.
                 </p>
             </div>
         );

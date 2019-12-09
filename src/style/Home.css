@@ -11,7 +11,7 @@ body {
 }
 
 .title {
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center;
 }
 
@@ -43,11 +43,33 @@ nav ul li a:hover {
     color: rgb(0, 255, 255);
 }
 
-@media only screen and (max-witdh: 360) {
+@media only screen and (max-witdh: 560) {
     nav ul li {
         font-size: 26px;
         color: black;
     }
+    .swiper-container {
+        width: 100px;
+        height: 100px;
+    }
+    .swiper-slide img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.swiper-slide img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
 }
 
 

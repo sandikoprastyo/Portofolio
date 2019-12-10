@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import './animate.css';
+
 body {
     margin: 0;
     padding: 0;
@@ -11,12 +13,15 @@ body {
 }
 
 .title {
-    padding-top: 80px;
+    padding-top: 150px;
     text-align: center;
+   
 }
 
+
 .intro {
-    margin: 10px;
+    font-size:24px;
+    margin: 20px;
     font-size: large;
     text-align: center;
 }
@@ -71,6 +76,33 @@ nav ul li a:hover {
     height: 300px;
     border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+
+/* animate */
+.titleHomepage1 {
+ -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: fadeIn;
+    animation-duration: 5s;
+}
+
+.titleHomepage2 {
+ -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: fadeIn;
+    animation-duration: 10s;
+}
+
+
+
+
 
 
 /* background */

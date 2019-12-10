@@ -11,8 +11,8 @@ class Home extends Component
         return (
             <div className="App">
                 <div className="title">
-                    <h1>Hai I'm Diko</h1>
-                    <h2>Frontend Developer | Web Design</h2>
+                    <h1 className="titleHomepage1">Hai I'm<br /> <span className="titleHomepage2">Sandiko prastyo</span></h1>
+                    <h2>Frontend Developer</h2>
                 </div>
                 <div className="icon">
                     <SocialIcon url="https://github.com/sandikoprastyo" target="_blank" />
@@ -20,6 +20,7 @@ class Home extends Component
                     <SocialIcon url="https://facebook.com/Sandikoprastyo" target="_blank" />
                     <SocialIcon url="https://www.instagram.com/sandikoprastyo/" target="_blank" />
                     <SocialIcon url="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=sandikoprastyo@gmail.com" target="_blank" />
+                    <SocialIcon url="https://gethired.id/download-cv" target="_blank" />
                 </div>
             </div>
         );

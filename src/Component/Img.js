@@ -34,7 +34,7 @@ class Img extends React.Component
         }
 
         return (
-            <div>
+            <div className="animeImage">
                 <Swiper {...params}>
                     <div className="swiper-slide"><a href="http://skyhouse-bsdcity.id/" target="_blank"><img src={img1} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
                     <div className="swiper-slide"><a href="http://amigos.co.id/" target="_blank"><img src={img2} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>

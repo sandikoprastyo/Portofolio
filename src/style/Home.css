@@ -120,7 +120,12 @@ nav ul li a:hover {
 
 
 
-
+.animeImage {
+   -webkit-animation-name: bounceInRight;
+    -webkit-animation-duration: 5s;
+    animation-name: bounceInRight;
+    animation-duration: 5s;
+}
 
 /* background */
 

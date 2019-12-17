@@ -6,7 +6,6 @@ import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
 
 
 
-
 class RoundCss extends Component
 {
     render()

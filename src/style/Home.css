@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 @import './animate.css';
-
 body {
     margin: 0;
     padding: 0;
@@ -15,11 +14,10 @@ body {
 .title {
     padding-top: 80px;
     text-align: center;
-   
 }
 
 .intro {
-    font-size:24px;
+    font-size: 24px;
     margin: 20px;
     font-size: large;
     text-align: center;
@@ -78,14 +76,47 @@ nav ul li a:hover {
 
 
 /* animate */
-.title {
- -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
-    animation-name: fadeIn;
-    animation-duration: 5s;
+
+.title h1 {
+    -webkit-animation-name: bounceInDown;
+    -webkit-animation-duration: 5s;
+    animation-name: bounceInDown;
+    animation-duration: 2s;
+}
+
+.title h2 {
+    -webkit-animation-name: bounceInLeft;
+    -webkit-animation-duration: 5s;
+    animation-name: bounceInLeft;
+    animation-duration: 4s;
 }
 
 
+
+.intro .p1{
+    -webkit-animation-name: bounceInRight;
+    -webkit-animation-duration: 5s;
+    animation-name: bounceInRight;
+    animation-duration: 5s;
+}
+.intro .p2{
+    -webkit-animation-name: bounceInRight; 
+    -webkit-animation-duration: 10s;
+    animation-name: bounceInRight;
+    animation-duration: 10s;
+}
+.intro .p3{
+    -webkit-animation-name: bounceInRight; 
+    -webkit-animation-duration: 15s;
+    animation-name: bounceInRight;
+    animation-duration: 15s;
+}
+.intro .p4{
+    -webkit-animation-name: bounceInRight;
+    -webkit-animation-duration: 20s;
+    animation-name: bounceInRight;
+    animation-duration: 20s;
+}
 
 
 

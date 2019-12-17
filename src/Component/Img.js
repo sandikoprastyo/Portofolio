@@ -23,24 +23,30 @@ class Img extends React.Component
             cubeEffect: {
                 shadow: true,
                 slideShadows: true,
-                shadowOffset: 20,
+                shadowOffset: 30,
                 shadowScale: 0.94,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
             },
 
         }
+
         return (
+            <div>
+                <Swiper {...params}>
+                    <div className="swiper-slide"><a href="http://skyhouse-bsdcity.id/" target="_blank"><img src={img1} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
+                    <div className="swiper-slide"><a href="http://amigos.co.id/" target="_blank"><img src={img2} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
+                    <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/conakito/" target="_blank"><img src={img3} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
+                    <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/Cloning-Zalora-Frontpage/" target="_blank"><img src={img4} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
+                    <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/Babastudio-exercis-3/" target="_blank"><img src={img5} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
+                    <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/DevC-Exercise3/" target="_blank"><img src={img6} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
+                    <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/Todolist/" target="_blank"><img src={img7} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
+                    <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/indiehouse" target="_blank"><img src={img8} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
+                </Swiper >
 
-            <Swiper {...params}>
-                <div className="swiper-slide"><a href="http://skyhouse-bsdcity.id/" target="_blank"><img src={img1} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
-                <div className="swiper-slide"><a href="http://amigos.co.id/" target="_blank"><img src={img2} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
-                <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/conakito/" target="_blank"><img src={img3} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
-                <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/Cloning-Zalora-Frontpage/" target="_blank"><img src={img4} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
-                <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/Babastudio-exercis-3/" target="_blank"><img src={img5} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
-                <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/DevC-Exercise3/" target="_blank"><img src={img6} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
-                <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/Todolist/" target="_blank"><img src={img7} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
-                <div className="swiper-slide"><a href="https://sandikoprastyo.github.io/indiehouse" target="_blank"><img src={img8} alt="img" style={{ width: "300px", height: "300px" }} /></a></div>
-            </Swiper>
-
+            </div>
         )
     }
 }
